@@ -2,6 +2,7 @@ import React from "react";
 import { RiAwardFill } from "react-icons/ri";
 import { HiUsers } from "react-icons/hi";
 import { ImFolderOpen } from "react-icons/im";
+import GEEK from "../../assets/mr-geek.jpg";
 import "./about.css";
 
 const About = () => {
@@ -10,7 +11,12 @@ const About = () => {
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className="container about__ container">
+      <div className="container about__container">
+        <div className="about__me">
+          <div className="about__me-image">
+            <img src={GEEK} alt="About Image" />
+          </div>
+        </div>
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
@@ -30,10 +36,10 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
-            architecto repudiandae, illo similique ex delectus in nam distinctio
-            incidunt eveniet doloremque tenetur laudantium maxime suscipit nihil
-            atque consequuntur iusto dolore.
+            I am a creative Web Developer offering years of experience providing
+            high-impact web solutions for diverse industry organizations.
+            Skilled in designing, developing and testing multiple web-based
+            applications incorporating a range of technologies.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
